@@ -1,0 +1,19 @@
+<div class="container">
+        <img src="/assets/images/category1.webp" (click)="addCategory()" style="width: 150px; cursor:pointer">
+</div>
+
+<div class="container">
+    <img src="/assets/images/category1.webp" (click)="addFilterCategory()" style="width: 150px; cursor:pointer">
+</div>
+
+<div *ngIf="openFilterForm">
+    <app-shared-modal (closeEvent)="closeFilterForm()">
+        <app-filter-category></app-filter-category>
+    </app-shared-modal>
+</div>
+
+<div *ngIf="openFormCategory">
+    <app-shared-modal (closeEvent)="closeCategoryForm()">
+        <app-category-form></app-category-form>
+    </app-shared-modal>
+</div>

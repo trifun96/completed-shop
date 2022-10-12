@@ -1,0 +1,176 @@
+.product-container {
+    display: flex;
+
+}
+
+
+
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    margin-top: 60px;
+
+
+}
+
+.products {
+    margin-top: 0px;
+}
+
+
+.container-product {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+
+.example-card {
+    max-width: 400px;
+    width: max-content;
+    padding: 0;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(245, 238, 238);
+    max-width: min-content;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+}
+
+
+.status{
+    font-size: 21px;
+    padding: 10px;
+    font-weight: 450;
+    margin-top: 20px;
+    color: rgb(174, 108, 33);
+  
+}
+
+.paginator {
+    font-size: 23px;
+    width: 700px;
+    padding: 30px;
+    margin: 0px auto;
+}
+
+
+.mat-card-header {
+    display: block;
+    text-align: center;
+}
+
+
+.mat-card-content {
+    max-width: 400px;
+    margin: 10px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.mat-card-subtitle {
+    padding: 20px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.mat-card-actions {
+    text-align: center;
+
+}
+
+.mat-card>.mat-card-actions:last-child {
+    padding-bottom: 40px;
+}
+
+
+.mat-raised-button {
+    background-color: rgb(174, 108, 33);
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+
+.search-container {
+    max-width: 1450px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.search p {
+    font-size: 20px;
+    font-weight: 450;
+    margin-top: 100px;
+
+}
+
+.title {
+    max-width: 1450px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-left: 7px solid red;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-weight: 350;
+}
+
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 22%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: gray;
+}
+
+.form__field:focus {
+
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: primary;
+    font-weight: 700;
+
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, primary, secondary);
+
+}

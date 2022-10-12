@@ -1,0 +1,21 @@
+
+<div class="order-content">
+    <div class="order-img">
+      <mat-card-title>{{ productInfo.title }}</mat-card-title>
+      <img [src]="productInfo.image" />
+    </div>
+    <div class="order-info">
+      <h1 class="title">{{ data.name }} {{ data.lastName }}</h1>
+      <p class="content">{{ productInfo.title }}</p>
+      <p class="description">{{ productInfo.description }}</p>
+      <p class="quantity">{{"order.quantity" | translate}}: {{ productInfo.quantity }}</p>
+      <p class="price">{{"order.price" | translate}}: {{ productInfo.price }} $</p>
+      <p class="mobile">{{"order.mobilePhone" | translate}}: {{ data.mobilePhone }}</p>
+      <p class="city">
+        {{"order.address" | translate}}: {{ data.address }}, {{ data.postalCode }} {{ data.city }}
+      </p>
+      <button mat-raised-button class="button" (click)="closeButton()">
+      {{"order.delivery" | translate}}
+      </button>
+    </div>
+  </div>

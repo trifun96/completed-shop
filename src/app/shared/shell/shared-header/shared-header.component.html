@@ -1,0 +1,31 @@
+<div class="header">
+    <div class="container">  
+    <a class="logo">T-Shirt<span>Store</span></a>
+    <div class="header-right">
+      <div *ngIf="!isLoggedIn">
+        <a routerLink="/product/page" routerLinkActive="active">{{"home.product-page" | translate}}</a>
+        <a routerLink="/login" routerLinkActive="active">{{"home.login" | translate}}</a>
+        <span routerLink="/cart" class="material-icons">shopping_cart</span>
+        <span class="badge-size" mat-Badge="1" mat-BadgeSize="large">{{totalItem$ | async}}</span>
+      </div>
+      <div *ngIf="isLoggedIn">
+        <a routerLink="/admin/products" routerLinkActive="active">{{"home.admin-page" | translate}}</a>
+        <a routerLink="/product/page" routerLinkActive="active">{{"home.product" | translate}}</a>
+        <a routerLink="/admin/order/detail" routerLinkActive="active">{{"home.order" | translate}}</a>
+        <a routerLink="/admin/category" routerLinkActive="active">{{"home.category" | translate}}</a>
+        <a routerLink="/product/page" (click)="logout()">{{"home.logout" | translate}}</a>
+      </div>
+    </div>
+    <div class="localization">
+      <label for="">
+        <select #langSelect (change)="translate.use(langSelect.value)">
+          <option *ngFor="let lang of translate.getLangs()">
+            <p>{{ lang }}</p>
+          </option>
+        </select>
+      </label>
+    </div>
+  </div>
+  </div>
+ 
+  

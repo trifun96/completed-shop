@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: sans-serif;
+    color: white;
+  
+  }
+  
+  .form-container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(221, 234, 234);
+  }
+  .login-form{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(89, 71, 71);
+    width: 380px;
+    padding: 40px 20px;
+    border-radius: 40px;
+    box-shadow: 7px 7px 60px #bababa;
+  }
+  h1{
+  
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 300;
+  
+  }
+  
+  h4{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    font-weight: 100;
+  }
+  
+  
+  label{
+    color: white;
+  }
+  
+  .control input{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+  }
+  
+  .control .submit{
+    background-color: rgb(174, 108, 33);
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .control .submit:hover{
+    opacity: 0.8;
+  }
+  
+  .link{
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  font-size: 20;
+  }
+  
+  .link a{
+    text-decoration: none;
+  color: #fff;
+  opacity: .6;
+  transition: opacity .3s ease;
+  
+  }
+  
+  .link a:hover{
+    opacity: 1;
+  }
+
+  .mat-raised-button {
+    background-color: rgb(174, 108, 33);
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+  
+  

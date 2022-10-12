@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="order-container" *ngFor="let order of orderData">
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>{{order.name}} {{order.lastName}}</mat-card-title>
+                <mat-card-subtitle *ngFor="let item of order.orders">{{item.title}}</mat-card-subtitle>
+            </mat-card-header>
+            <div class="example-header-image" *ngFor="let item of order.orders">
+                <img [src]="item.image" style="width: 200px;">
+            </div>
+            <!-- <mat-card-content>
+                <p *ngFor="let item of order.orders">
+                    {{item.description}}
+                </p>
+            </mat-card-content> -->
+            <mat-card-actions>
+                <button style="margin-right: 65px;" mat-button (click)="openModalInfo(order, order.orders)">{{"order.showMore" | translate}}</button>
+                <mat-icon class="delete" (click)="deleteOrder(order)">delete</mat-icon>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
+<div *ngIf="infoModal">
+    <app-shared-modal (closeEvent)="closeInfoModal()">
+        <app-order-info [data]="selectOrder" [productInfo]="selectProduct" (click)="closeButton()"></app-order-info>
+    </app-shared-modal>
+</div>

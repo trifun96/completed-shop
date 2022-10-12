@@ -1,0 +1,121 @@
+{
+    "home": {
+        "product-page": "Products",
+        "admin-page": "Admin Page",
+        "category": "Category",
+        "login": "Login",
+        "logout": "Logout",
+        "product": "Products",
+        "add-product": "Add Product",
+        "button":"Add to cart",
+        "delivery": "Fast delivery",
+        "purchase": "Hire purchase",
+        "return-money": "Return money within 14 days",
+        "order": "Orders"
+    },
+    "login": {
+        "title": "Welcome",
+        "content": "Please enter your login details",
+        "password": "Password",
+        "button": "Login",
+        "home": "Take me Home"
+    },
+    "form": {
+        "add": "Add product",
+        "edit": "Edit Product",
+        "title": "Title",
+        "description":"Description",
+        "quantity":"Quantity",
+        "price": "Price",
+        "update-product": "Add product",
+        "categoryName": "Category Name",
+        "categoryID":"Category ID",
+        "addCategory": "Add Category"
+    },
+    "modal": {
+        "price":"Price",
+        "quantity":"Quantity",
+        "button": "Buy Now",
+        "message":"Unfortunately, there are no results for your search... :)"
+    },
+    "subscribe": {
+        "title": "Subscribe to our Newsletter",
+        "content": "Receive updates instanly",
+        "button": "Subscribe"
+      },
+      "footer": {
+        "contacts": "Contact",
+        "information": "Information",
+        "customer-service": "Customer-service",
+        "working-hours": "Mon-Fri 08-20h",
+        "location": "Our Location",
+        "aboutUs": "About Us",
+        "privacy-policy": "Privacy policy",
+        "employment": "Employment",
+        "gift-card": "Gift cards",
+        "contact": "Contact",
+        "terms": "Terms of use and sale",
+        "return-item": "Return in store",
+        "delivery": "Delivery",
+        "complaints": "Complaints",
+        "payment-card": "Payment by card",
+        "instruction": "Instruction for registration"
+      },
+      "admin": {
+        "add-product": "Add product",
+        "edit-product": "Edit product",
+        "update-product": "Update Product",
+        "filter": "Filter",
+        "image": "Image",
+        "title": "Title",
+        "description": "Description",
+        "quantity": "Quantity",
+        "price": "Price",
+        "action": "Action"
+      },
+      "cart": {
+        "my-cart": "My cart",
+        "empty-cart": "Your cart is empty!",
+        "button": "Shop Now",
+        "No": "No",
+        "image": "Image",
+        "title": "Title",
+        "desc": "Description",
+        "price": "Price",
+        "quantity": "Quantity",
+        "total": "Total",
+        "action": "Action",
+        "shop-more": "Shop More",
+        "checkout": "Checkout",
+        "empty-card": "Empty Cart",
+        "total-price": "Total price"
+      },
+      "checkout": {
+        "title": "Customer information",
+        "full-name": "Full Name",
+        "last-name": "Last Name",
+        "mobile-phone": "Mobile phone",
+        "city": "City",
+        "address": "Address",
+        "zip": "Zip",
+        "button": "Continue to checkout"
+      },
+      "order": {
+        "title": "Customer information",
+        "name": "Name",
+        "last-name": "Last Name",
+        "mobilePhone": "Mobile phone",
+        "city": "City",
+        "address": "Address",
+        "postal-code": "Postal code",
+        "content": "Order",
+        "titles": "Title",
+        "desc": "Description",
+        "price": "Price",
+        "quantity": "Quantity",
+        "total-price": "Total price",
+        "delivery": "Delivery",
+        "showMore": "Show More"
+      }
+     
+}

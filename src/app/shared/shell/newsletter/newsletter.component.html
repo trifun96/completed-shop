@@ -1,0 +1,12 @@
+<form class="wrapper" [formGroup]="subscribeForm">
+    <h1>{{ "subscribe.title" | translate }}</h1>
+    <p>{{ "subscribe.content" | translate }}</p>
+    <div class="newsletter">
+      <input type="text" class="input" formControlName="email" />
+      <span>
+        <mat-icon> email</mat-icon>
+      </span>
+      <button class="btn" (click)="postSubscribeData()">{{ "subscribe.button" | translate }}</button>
+    </div>
+  </form>
+  

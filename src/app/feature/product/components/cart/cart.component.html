@@ -1,0 +1,75 @@
+<div *ngIf="cartItems$ | async as cartItems">
+    <ng-container *ngIf="cartItems.length !== 0">
+      <div class="card-table">
+        <div class="card-product">
+          <thead>
+            <tr>
+              <th>{{ "cart.No" | translate }}</th>
+              <th>{{ "cart.image" | translate }}</th>
+              <th>{{ "cart.title" | translate }}</th>
+              <th>{{ "cart.desc" | translate }}</th>
+              <th>{{ "cart.price" | translate }}</th>
+              <th>{{ "cart.quantity" | translate }}</th>
+              <!-- <th>{{ "cart.total" | translate }}</th> -->
+              <th>{{ "cart.action" | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of cartItems; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>
+                <img style="width: 120px" src="{{ product.image }}" />
+              </td>
+              <td>{{ product.title }}</td>
+              <td style="width: 50%">
+                {{ product.description }}
+              </td>
+              <td>{{ product.price }}$</td>
+              <td>{{ product.quantity }}</td>
+              <!-- <td>{{ product.total }}$</td> -->
+              <td>
+                <mat-icon (click)="removeItem(product)" class="delete-button"
+                  >delete</mat-icon
+                >
+              </td>
+            </tr>
+            <tr>
+              <td colspan="8">
+                <button routerLink="/product/page" class="shop-more">
+                  {{ "cart.shop-more" | translate }}
+                </button>
+                <button routerLink="/checkout" class="checkout">
+                  {{ "cart.checkout" | translate }}
+                </button>
+                <button (click)="removeAllProducts()" class="empty-card">
+                  {{ "cart.empty-card" | translate }}
+                </button>
+                <strong class="total-price"
+                  >{{ "cart.total-price" | translate }}: {{ grandTotalPrice$ | async }}$</strong
+                >
+              </td>
+            </tr>
+          </tbody>
+        </div>
+      </div>
+    </ng-container>
+    
+    <ng-container *ngIf="cartItems.length === 0">
+      <div class="container">
+        <div class="card">
+          <h3>{{ "cart.my-cart" | translate }}</h3>
+        </div>
+        <div class="center">
+          <img
+            src="https://media.istockphoto.com/photos/shopping-cart-with-different-food-products-picture-id1306977522?b=1&k=20&m=1306977522&s=170667a&w=0&h=aCpJcpOWb3U3O6Vh5algE6PNNbgGZUocUo4tRJ3iOKQ="
+          />
+          <h5>{{ "cart.empty-cart" | translate }}</h5>
+          <button routerLink="/product/page" class="add-to-cart">
+            {{ "cart.button" | translate }}
+          </button>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  
+    

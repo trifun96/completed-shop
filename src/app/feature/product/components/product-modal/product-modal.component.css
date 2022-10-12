@@ -1,0 +1,48 @@
+.product-content{
+    display: flex;
+    gap: 2rem;
+  
+  
+  
+  }
+  
+  .product-img img{
+  max-width: 400px;
+  
+  }
+  
+  .product-info{
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    margin-top: 30px;
+  }
+  
+  .title{
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .price{
+    margin-top: 25px;
+    font-size: 20px;
+  }
+
+  .description{
+    margin-top: 20px;
+    font-size: 20px;
+
+  }
+
+  .quantity{
+    margin-top: 20px;
+  }
+  
+  .mat-raised-button {
+    background-color: rgb(174, 108, 33);
+    color: white;
+    margin-top: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+
+}

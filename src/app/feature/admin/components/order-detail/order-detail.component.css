@@ -1,0 +1,64 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  
+  
+  }
+  
+  
+  .order-container{
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  width: min-content;
+  
+  
+  }
+
+  .mat-card>:first-child, .mat-card-content>:first-child{
+    padding: 12px;
+  }
+  
+  .mat-card-actions{
+    display: inline-flex;
+
+  
+  }
+
+  .mat-card-actions .delete{
+ 
+    margin-left: -20px;
+  }
+
+
+  
+  .mat-card-header{
+  display: block;
+  }
+  
+  .mat-card-content{
+    margin: 10px;
+  }
+  
+  .mat-card-subtitle{
+  padding: 5px;
+  }
+  
+  
+  .example-card {
+    max-width: 200px;
+    padding: 0;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgb(246, 242, 242);
+  }
+  
+  
+  
+  

@@ -1,0 +1,68 @@
+
+    h1{
+
+        font-size: 35px;
+        text-align: center;
+        color: rgb(37, 37, 37);
+        font-weight: 300;
+        margin-top: 20px;
+      
+      }
+
+  label{
+    color: rgb(35, 35, 35);
+  }
+  
+  .control{
+    margin: 10px;
+  }
+  
+  .control input{
+    width: 90%;
+    padding: 10px;
+    display: block;
+    color: rgb(12, 11, 11);
+    margin: 10px 0px;
+  }
+
+.submit-button{
+    background-color: rgb(174, 108, 33);
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .submit-button:active{
+    background-color: rgb(47, 36, 39);
+    color:white;
+    width: 96%;
+    font-size: 20px;
+    opacity: .7;
+    transition: opacity .3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 0px;
+  }
+
+    
+  table {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 50%;
+    margin-top: 30px;
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: 450;
+  
+  }

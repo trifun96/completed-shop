@@ -1,0 +1,12 @@
+<form [formGroup]="categoryForm">
+    <h1>{{"form.addCategory" | translate}}</h1>
+    <div class="control">
+    <label for="title">{{ "form.categoryName" | translate }}</label>
+    <input type="text" name="title" class="input" id="name" placeholder="Category Name" formControlName="categoryName" />
+  </div>
+  <div class="control">
+    <button type="submit" class="submit-button" (click)="postCategoryData()">
+      <div>{{"form.addCategory" | translate}}</div>
+    </button>
+  </div>
+</form>

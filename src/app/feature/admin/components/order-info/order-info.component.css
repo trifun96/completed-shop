@@ -1,0 +1,32 @@
+.order-content{
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .order-img img{
+    max-width: 400px;
+  
+    }
+    .order-info{
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      margin-top: 50px;
+    }
+
+
+  
+    .mat-card-title{
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .button{
+      background-color: rgb(174, 108, 33);
+      color: white;
+      font-size: 15px;
+      border-radius: 5px;
+    }
+
+ 
+  

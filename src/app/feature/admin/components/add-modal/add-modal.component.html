@@ -1,0 +1,61 @@
+<form [formGroup]="profileForm">
+    <h1>{{isEdit ? ("form.edit" | translate) : ("form.add" | translate) }}</h1>
+  
+    <div class="control">
+      <div>
+        <input type="file" name="image" id="upload-file" (change)="onSelectFile($event)" id="image" placeholder="Photo"
+          formControlName="image" />
+        <img id="upload-file" [src]="!previewImage ? url : previewImage" class="preview-image" alt="Preview Image"
+          title="Preview Image" />
+      </div>
+    </div>
+    <div class="control">
+      <label for="title">{{ "form.title" | translate }}</label>
+      <input type="text" name="title" class="input" id="title" placeholder="Title" formControlName="title" />
+    </div>
+    <div class="control">
+      <label for="description">{{ "form.description" | translate }}</label>
+      <input type="text" name="description" class="input" id="description" placeholder="Description"
+        formControlName="description" />
+    </div>
+
+    <div class="custom-select" style="width:400px; margin-left: 10px;">
+      <select formControlName="category">
+        <option *ngFor="let category of categories">
+          {{ category.categoryName }}
+        </option>
+      </select>
+    </div>
+
+    <div class="custom-select" style="width:400px; margin-left: 10px; margin-top: 10px;">
+      <select formControlName="filterCategory">
+        <option *ngFor="let filterCategory of filterCategories">
+          {{ filterCategory.filterCategory }}
+        </option>
+      </select>
+    </div>
+
+    <div class="control">
+      <label for="quantity">{{ "form.quantity" | translate }}</label>
+      <input type="number" id="quantity" class="input" name="quantity" min="1" max="10000" formControlName="quantity" />
+    </div>
+    <div class="control">
+      <label for="price">{{ "form.price" | translate }}</label>
+      <input type="number" id="price" name="price" class="input" min="1" max="10000" formControlName="price" />
+    </div>
+    <div class="control">
+      <label for="category">Category ID</label>
+      <input type="number" id="quantity" class="input" name="quantity" min="1" max="10000" formControlName="categoryID" />
+    </div>
+    <div class="control">
+      <label for="filterCategory">Filter Category</label>
+      <input type="number" id="filterCategory" class="input" name="filterCategory" min="1" max="10000" formControlName="filterCategory" />
+    </div>
+
+
+    <div class="control">
+      <button type="submit" class="submit-button" (click)="postProductsDetails()">
+        <div>{{isEdit ? ("admin.update-product" | translate) : ("admin.add-product" | translate)}}</div>
+      </button>
+    </div>
+  </form>

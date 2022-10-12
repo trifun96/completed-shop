@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form [formGroup]="orderForm">
+          <div class="row">
+            <div class="col-50">
+              <h3>{{ "checkout.title" | translate }}</h3>
+              <label for="name">{{ "checkout.full-name" | translate }}</label>
+              <input type="text" id="name" name="name" placeholder="Trifun" formControlName="name" />
+  
+              <label for="adress">{{ "checkout.last-name" | translate }}</label>
+              <input type="text" id="lastname" name="lastname" placeholder="Markovic" formControlName="lastName" />
+              <label for="adress">{{
+                "checkout.mobile-phone" | translate
+                }}</label>
+              <input type="text" id="phone" name="phone" placeholder="0694456467" formControlName="mobilePhone" />
+  
+              <label for="city">{{ "checkout.city" | translate }}</label>
+              <input type="text" id="city" name="city" placeholder="Pozega" formControlName="city" />
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="address">{{
+                    "checkout.address" | translate
+                    }}</label>
+                  <input type="text" id="address" name="address" placeholder="Karadjordjeva 40"
+                    formControlName="address" />
+                </div>
+                <div class="col-50">
+                  <label for="zip">{{ "checkout.zip" | translate }}</label>
+                  <input type="text" id="zip" name="zip" placeholder="31213" formControlName="postalCode" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn" (click)="postOrderData()">
+            {{ "checkout.button" | translate }}
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+<div class="product-content">
+    <div class="product-img">
+        <img src="{{data.image}}"/>
+    </div>
+    <div class="product-info">
+        <div class="title">{{data.title}}</div>
+        <p class="price">{{"modal.price" | translate}}: {{data.price}}$.</p>
+        <div class="description">
+            <p class="description">{{data.description}}</p>
+            <p class="quantity">{{"modal.quantity" | translate}}: {{data.quantity}}.</p>
+        </div>
+        <mat-card-actions>
+            <button mat-raised-button (click)="addToCart(data)">{{"home.button" | translate}}</button>
+        </mat-card-actions>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+<div class="product-container">
+    <div class="filter-container">
+        <p class="status">CENA</p>
+        <div>
+            <mat-checkbox style="font-size: 18px;" (change)="checkValue($event,0,30)">
+                <p style="margin-top: 10px;">0$ - 30$</p>
+            </mat-checkbox>
+        </div>
+        <div>
+            <mat-checkbox style="font-size: 18px;" (change)="checkValue($event,30,81)">
+                <p style="margin-top: 10px;">30$ - 80$</p>
+            </mat-checkbox>
+        </div>
+        <div>
+            <mat-checkbox style="font-size: 18px;" (change)="checkValue($event,80,150)">
+                <p style="margin-top: 10px;">80$ - 150%</p>
+            </mat-checkbox>
+        </div>
+        <div>
+            <mat-checkbox style="font-size: 18px;" (change)="checkValue($event,150,200)">
+                <p style="margin-top: 10px;">150$ - 200$</p>
+            </mat-checkbox>
+        </div>
+        <div>
+            <mat-checkbox style="font-size: 18px;" (change)="checkValue($event,200,250)">
+                <p style="margin-top: 10px;">200$ - 250$</p>
+            </mat-checkbox>
+        </div>
+    </div>
+    <div class="products">
+        <div class="search-container">
+    <div class="form__group field">
+        <input type="input" class="form__field" placeholder="Search" name="search" id='search' [ngModel]="search"
+            (ngModelChange)="onSearch($event)" required />
+    </div>
+</div>
+<div class="title">
+    <h1>Deca</h1>
+</div>
+<div class="container">
+    <mat-card class="example-card" *ngFor="let data of childCollection | paginate: { itemsPerPage: 8, currentPage: page }">
+        <div (click)="openInfoModal(data)" >
+             <mat-card-header>
+            <mat-card-subtitle>{{data.title}}</mat-card-subtitle>
+        </mat-card-header>
+        <img [src]="data.image" style="width:320px ;">
+        <mat-card-content>
+            <p>
+                {{data.description}}
+            </p>
+        </mat-card-content>
+        </div>
+        <mat-card-actions>
+          <button mat-raised-button (click)="addToCart(data)">Add to cart</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <div class="search" *ngIf="childCollection && childCollection.length === 0" style="margin-left: 30px;">
+        <p>
+            {{"modal.message" | translate}}
+        </p>
+    </div>
+    <div class="paginator" *ngIf="childCollection && childCollection.length !== 0 && childCollection.length > 8 ">
+        <pagination-controls (pageChange)="page = $event"></pagination-controls>
+</div>
+    </div>
+    </div>
+</div>
+
+    <app-newsletter></app-newsletter>
+    <app-footer-information></app-footer-information>
+    <div *ngIf="openModal">
+        <app-shared-modal (closeEvent)="closeModal()">
+        <app-product-modal [data]="selectProduct"></app-product-modal>
+        </app-shared-modal>
+    </div>

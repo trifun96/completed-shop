@@ -1,0 +1,119 @@
+{
+    "home": {
+        "product-page": "Proizvodi",
+        "admin-page": "Admin Strana",
+        "category": "Kategorije",
+        "login": "Logovanje",
+        "logout": "Izlogujte se",
+        "product": "Proizvodi",
+        "add-product": "Dodaj proizvod",
+        "button":"Dodaj u korpu",
+        "delivery": "Brza isporuka",
+        "purchase": "Plaćanje na rate",
+        "return-money": "Povrat novca u roku od 14 dana",
+        "order":"Narudzbine"
+    },
+    "login": {
+        "title": "Dobrodosli",
+        "content": "Molimo unesite vase kredencijale",
+        "password": "Lozinka",
+        "button": "Ulogujte se",
+        "home": "Vrati se nazad"
+    },
+    "form": {
+        "add": "Dodaj proizvod",
+        "edit": "Azuriraj Prozivod",
+        "title": "Naziv proizvoda",
+        "description":"Opis proizvoda",
+        "quantity":"Kolicina",
+        "price": "Cena",
+        "update-product": "Dodaj proizvod",
+        "categoryName": "Ime kategorije",
+        "categoryID":"ID Kategorije",
+        "addCategory": "Dodaj Kategoriju"
+    },
+    "modal": {
+        "price":"Cena",
+        "quantity":"Kolicina",
+        "button": "Kupi Odmah",
+        "message":"Nazalost, trazeni rezultat ne postoji... :)"
+    },
+    "subscribe": {
+        "title": "Pretplatite se na naš Newsletter",
+        "content": "Primajte ažuriranja odmah",
+        "button": "Pošalji"
+      },
+      "footer": {
+        "information": "Informacije",
+        "customer-service": "Korisinčki servis",
+        "working-hours": "Pon-Pet 08-20h",
+        "location": "Naša lokacija",
+        "aboutUs": "O nama",
+        "privacy-policy": "Politika privatnosti",
+        "employment": "Zaposlenje",
+        "gift-card": "Poklon kartice",
+        "contact": "Kontakt",
+        "terms": "Uslovi korišćenja i prodaje",
+        "return-item": "Vraćanje u prodavnicu",
+        "delivery": "Isporuka",
+        "complaints": "Žalbe",
+        "payment-card": "Plaćanje karticom",
+        "instruction": "Informacije za registraciju"
+      },
+      "admin": {
+        "add-product": "Dodaj proizvod",
+        "edit-product": "Izmeni proizvod",
+        "update-product": "Ažuriraj proizvod",
+        "filter": "Pretraži",
+        "image": "Slika",
+        "title": "Naziv proizvoda",
+        "description": "Opis proizvoda",
+        "quantity": "Količina",
+        "pirce": "Cena",
+        "action": "Akcije"
+      },
+      "cart": {
+        "my-cart": "Moja korpa",
+        "empty-cart": "Vaša korpa je prazna",
+        "button": "Kupite sada ",
+        "No": "Redni broj",
+        "image": "Slika proizvoda",
+        "title": "Naziv proizvoda",
+        "desc": "Opis proizvoda",
+        "price": "Cena",
+        "quantity": "Količina",
+        "total": "Ukupno",
+        "action": "Akcije",
+        "shop-more": "Dodaj još",
+        "checkout": "Nastavi kupovinu",
+        "empty-card": "Isprazni korpu",
+        "total-price": "Ukupno"
+      },
+      "checkout": {
+        "title": "Adresa za naplatu",
+        "full-name": "Ime",
+        "last-name": "Prezime",
+        "mobile-phone": "Broj telefona",
+        "city": "Grad",
+        "address": "Adresa",
+        "zip": "Poštanski broj",
+        "button": "Nastavi sa kupovinom"
+      },
+      "order": {
+        "title": "Informacije o korisniku",
+        "name": "Ime",
+        "last-name": "Prezime",
+        "mobilePhone": "Broj telefona",
+        "city": "Grad",
+        "address": "Adresa",
+        "postal-code": "Poštanski broj",
+        "content": "Narudzbina",
+        "titles": "Naziv proizvoda",
+        "desc": "Opis proizvoda",
+        "price": "Cena",
+        "quantity": "Količina",
+        "total-price": "Ukupno",
+        "delivery": "Isporuci",
+        "showMore": "Ucitaj vise"
+      }
+}

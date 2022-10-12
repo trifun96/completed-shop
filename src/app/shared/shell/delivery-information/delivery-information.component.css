@@ -1,0 +1,41 @@
+.wrapper {
+    width: 100%;
+    height: 25%;
+    background-color: rgb(245, 238, 238);
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.info {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 120px;
+    
+}
+
+.flex {
+    display: flex;
+    width: 33%;
+
+}
+
+.flex span {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.flex span .mat-icon {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-weight: 200;
+    color: rgb(90, 71, 71);
+    line-height: 30px;
+   
+}

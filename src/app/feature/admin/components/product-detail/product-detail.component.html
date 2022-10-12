@@ -1,0 +1,96 @@
+<div class="button">
+    <button (click)="openModal(false)">
+        {{"home.add-product" | translate}}
+    </button>
+</div>
+
+
+<div class="container">
+    <mat-form-field appearance="standard">
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event)" #input>
+    </mat-form-field>
+    <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort>
+
+            <ng-container matColumnDef="image">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    {{ "admin.image" | translate }}
+                </th>
+                <td mat-cell *matCellDef="let product">
+                    <img width="100px" [src]="product.image" />
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="title">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    {{ "admin.title" | translate }}
+                </th>
+                <td mat-cell *matCellDef="let product"><p>{{ product.title }}</p></td>
+            </ng-container>
+
+            <ng-container matColumnDef="description">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    {{ "admin.description" | translate }}
+                </th>
+                <td mat-cell *matCellDef="let product"><p>{{ product.description }}</p></td>
+            </ng-container>
+
+            <ng-container matColumnDef="quantity">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    {{ "admin.quantity" | translate }}
+                </th>
+                <td mat-cell *matCellDef="let product"><p>{{ product.quantity }}</p></td>
+            </ng-container>
+
+            <ng-container matColumnDef="price">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    {{ "admin.price" | translate }}
+                </th>
+                <td mat-cell *matCellDef="let product"><p>{{ product.price }}$</p></td>
+            </ng-container>
+
+            <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    {{ "admin.action" | translate }}
+                </th>
+                <td mat-cell *matCellDef="let product">
+                    <div class="button-flex">
+                        <button (click)="openEditModal(true, product)" mat-icon-button color="warn">
+                            <mat-icon>edit</mat-icon>
+                        </button>
+                        <button (click)="deleteProduct(product.id)" mat-icon-button color="green">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </div>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let product; columns: displayedColumns;"></tr>
+
+
+            <tr class="mat-row" *matNoDataRow>
+                <td class="mat-cell" colspan="4">No data matching the filter</td>
+            </tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+    </div>
+</div>
+
+<div *ngIf="showModal">
+    <app-shared-modal (closeEvent)="closeModal()">
+    <app-add-modal [isEdit]="isEdit" [editData]="editData" (submitEvent)="onSubmit()"></app-add-modal>
+</app-shared-modal>
+</div>
+
+
+
+
+
+
+
+
+
+

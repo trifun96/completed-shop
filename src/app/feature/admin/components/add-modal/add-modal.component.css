@@ -1,0 +1,92 @@
+
+h1{
+
+    font-size: 35px;
+    text-align: center;
+    color: rgb(37, 37, 37);
+    font-weight: 300;
+  
+  }
+  
+  label{
+    color: rgb(35, 35, 35);
+  }
+  
+  .control{
+    margin: 10px;
+  }
+  
+  .control input{
+    width: 90%;
+    padding: 10px;
+    display: block;
+    color: rgb(12, 11, 11);
+    margin: 10px 0px;
+  }
+  
+  .submit-button{
+    background-color: rgb(174, 108, 33);
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .submit-button:active{
+    background-color: rgb(47, 36, 39);
+    color:white;
+    width: 96%;
+    font-size: 20px;
+    opacity: .7;
+    transition: opacity .3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 0px;
+  }
+
+  .categoryValue{
+    margin-left: 10px;
+   
+  }
+
+  .categoryValue input{
+    cursor: pointer;
+  }
+  
+  
+  
+  .preview-image {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .danger-title{
+  color: red;
+  font-size: 17px;
+  font-weight: 500;
+  
+  }
+  
+  .input.ng-touched.ng-valid{
+  border: 2px solid blue;
+  }
+  
+  .input.ng-touched.ng-invalid{
+  border: 2px solid red;
+    }
+  
+
+    .custom-select select{
+      font-size: 20px;
+      border-radius: 10px;
+      color: rgb(255, 255, 255);
+      width: 60%;
+      background-color: rgb(174, 108, 33);
+      padding: 7px;
+    
+    }
+  

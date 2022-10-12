@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.header-info {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.items p {
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-size: 17px;
+    line-height: 1.1;
+    color: rgb(37, 35, 35);
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.items p:active{
+    background-color: rgb(174, 108, 33);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
