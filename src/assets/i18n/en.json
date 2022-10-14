@@ -116,6 +116,27 @@
         "total-price": "Total price",
         "delivery": "Delivery",
         "showMore": "Show More"
+      },
+      "category":{
+        "addToCart": "Add to cart"
+      },
+      "header-info":{
+        "new-collection":"New Collection",
+        "all-products-title":"All Products",
+        "nCollection-title":"New Collection",
+        "man-title":"Mans",
+        "woman-title":"Womans",
+        "child-title":"Childrens",
+        "outle-title":"Outlet",
+        "man":"MANS",
+        "woman":"WOMANS",
+        "child":"CHILDREN",
+        "outlet":"OUTLET",
+        "price":"HIT PRICE",
+        "new":"NEW",
+        "category":"CATEGORY",
+        "main-title":"PRICE",
+        "status":"STATUS"
       }
      
 }

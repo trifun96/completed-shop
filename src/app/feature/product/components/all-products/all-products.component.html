@@ -1,23 +1,23 @@
 <div class="product-container">
     <div class="filter-container">
-        <p class="status">KATEGORIJA</p>
+        <p class="status">{{"header-info.category" | translate}}</p>
         <div>
             <mat-checkbox style="font-size: 18px;" (change)="pickValue($event,2)">
-                <p style="margin-top: 10px;">MUSKARCI</p>
+                <p style="margin-top: 10px;">{{"header-info.man" | translate}}</p>
             </mat-checkbox>
         </div>
         <div>
             <mat-checkbox style="font-size: 18px;" (change)="pickValue($event,3)">
-                <p style="margin-top: 10px;">ZENE</p>
+                <p style="margin-top: 10px;">{{"header-info.woman" | translate}}</p>
             </mat-checkbox>
         </div>
         <div>
             <mat-checkbox style="font-size: 18px;" (change)="pickValue($event,4)">
-                <p style="margin-top: 10px;">DECA</p>
+                <p style="margin-top: 10px;">{{"header-info.child" | translate}}</p>
             </mat-checkbox>
         </div>
 
-        <p class="status">CENA</p>
+        <p class="status">{{"header-info.main-title" | translate}}</p>
         <div>
             <mat-checkbox style="font-size: 18px;" (change)="checkValue($event,0,30)">
                 <p style="margin-top: 10px;">0$ - 30$</p>
@@ -43,15 +43,15 @@
                 <p style="margin-top: 10px;">200$ - 250$</p>
             </mat-checkbox>
         </div>
-        <p class="status">STATUS</p>
+        <p class="status">{{"header-info.status" | translate}}</p>
         <div>
             <mat-checkbox style="font-size: 18px;" (change)="pickValue($event,1)" >
-                <p style="margin-top: 10px;">NOVO</p>
+                <p style="margin-top: 10px;">{{"header-info.status" | translate}}</p>
             </mat-checkbox>
         </div>
         <div>
             <mat-checkbox style="font-size: 18px;" (change)="pickValue($event,5)">
-                <p style="margin-top: 10px;">HIT CENA</p>
+                <p style="margin-top: 10px;">{{"header-info.price" | translate}}</p>
             </mat-checkbox>
         </div>
     </div>
@@ -62,8 +62,9 @@
                     (ngModelChange)="onSearch($event)" required />
             </div>
         </div>
-        
+           <div class="title"><h1>{{"header-info.all-products-title" | translate}}</h1></div>
         <div class="container-product">
+         
             <mat-card class="example-card" *ngFor="let data of productData | paginate: { itemsPerPage: 8, currentPage: page }">
                 <div (click)="openInfoModal(data)">
                     <mat-card-header>

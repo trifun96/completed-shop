@@ -115,5 +115,26 @@
         "total-price": "Ukupno",
         "delivery": "Isporuci",
         "showMore": "Ucitaj vise"
+      },
+      "category":{
+        "addToCart": "Dodaj u korpu"
+      },
+      "header-info":{
+        "new-collection":"NOVA KOLEKCIJA",
+        "all-products-title":"Svi proizvodi",
+        "nCollection-title":"Nova Kolekcija",
+        "man-title":"Muskarci",
+        "woman-title":"Zene",
+        "child-title":"Deca",
+        "outle-title":"Outlet",
+        "man":"MUSKARCI",
+        "woman":"ZENE",
+        "child":"DECA",
+        "outlet":"OUTLET",
+        "price":"HIT CENA",
+        "new":"NOVO",
+        "category":"KATEGORIJA",
+        "main-title":"CENA",
+        "status":"STATUS"
       }
 }

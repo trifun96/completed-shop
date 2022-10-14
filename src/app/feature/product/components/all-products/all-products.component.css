@@ -10,18 +10,32 @@
     display: flex;
     flex-direction: column;
     padding: 80px;
-    margin-top: 60px;
+    margin-top: 100px;
 
 
 }
 
 .products {
-    margin-top: 0px;
+
+   margin-left: 30px;
+}
+
+.title{
+    max-width: 1450px;
+    margin: 0 auto;
+    border-left: 7px solid red;
+    font-size: 40px;
+}
+
+.title h1{
+    font-size: 40px;
+    font-weight: 350;
 }
 
 
+
 .container-product {
-    max-width: 1500px;
+    max-width: 15500px;
     margin: 0 auto;
     padding: 40px 20px;
     display: flex;
@@ -104,7 +118,7 @@
 }
 
 .search-container {
-    max-width: 1450px;
+    max-width: 1500px;
     margin: 0 auto;
     margin-top: 40px;
 }
