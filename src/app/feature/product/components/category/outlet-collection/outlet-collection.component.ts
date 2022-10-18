@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/core/services/api-service';
 import { CartService } from 'src/app/core/services/cart-service';
+import { NgxSpinnerService } from "ngx-spinner";
 
 @Component({
   selector: 'app-outlet-collection',
@@ -13,10 +14,15 @@ export class OutletCollectionComponent implements OnInit {
   outletCollection: any;
   openModal: boolean = false;
   selectProduct: any;
-  constructor(private api: ApiService, private cart: CartService) { }
+  constructor(private api: ApiService, private cart: CartService, private spinner: NgxSpinnerService) { }
 
   ngOnInit(): void {
     this.getAllProducts();
+    this.spinner.show();
+
+    setTimeout(() => {
+      this.spinner.hide();
+    }, 1000);
   }
 getAllProducts(){
   this.api.getProducts().subscribe(res =>{

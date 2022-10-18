@@ -19,7 +19,7 @@ body {
 
 .items {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 
 
 }
@@ -51,7 +51,7 @@ body {
 }
 
 
-.outlet a{
+.outlet a {
     font-size: 22px;
     font-weight: 600;
 }
@@ -59,4 +59,24 @@ body {
 .outlet span {
     font-size: 35px;
     color: rgb(174, 108, 33);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header-info {
+        background-color: rgb(255, 255, 255);
+        width: 600px;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+
+
+    .items a{
+        margin-left: 80px;
+    }
+
 }

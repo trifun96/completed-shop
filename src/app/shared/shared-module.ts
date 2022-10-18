@@ -12,12 +12,13 @@ import { FooterInformationComponent } from './shell/footer-information/footer-in
 import { RaitingComponent } from './shell/raiting/raiting.component';
 import { DeliveryInformationComponent } from './shell/delivery-information/delivery-information.component';
 import { HeaderInfoComponent } from '../feature/product/components/header-info/header-info.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 
 @NgModule({
-  imports: [CommonModule, RouterModule, TranslateModule, MatIconModule, FormsModule, ReactiveFormsModule],
+  imports: [CommonModule, RouterModule, TranslateModule, MatIconModule, FormsModule, ReactiveFormsModule, NgxSpinnerModule],
   declarations: [SharedModalComponent, NewsletterComponent, FooterInformationComponent, FooterInformationComponent, RaitingComponent, DeliveryInformationComponent, HeaderInfoComponent],
-  exports: [TranslateModule, CommonModule, FormsModule, RouterModule, SharedModalComponent, MatIconModule, NewsletterComponent, FooterInformationComponent, FormsModule, ReactiveFormsModule, RaitingComponent, DeliveryInformationComponent, HeaderInfoComponent],
+  exports: [TranslateModule, CommonModule, FormsModule, RouterModule, SharedModalComponent, MatIconModule, NewsletterComponent, FooterInformationComponent, FormsModule, ReactiveFormsModule, RaitingComponent, DeliveryInformationComponent, HeaderInfoComponent, NgxSpinnerModule],
 })
 export class SharedModule {}

@@ -11,7 +11,9 @@ import { OrderFormComponent } from './components/order-form/order-form.component
 import { ProductPageComponent } from './components/product-page/product-page.component';
 
 const routes: Routes = [
+  {path:'', redirectTo:'product/page/all/products', pathMatch:'full'},
   {path:'product/page', component: ProductPageComponent,
+
   children:[
     {path:'new/collection', component: NewCollectionComponent},
     {path:'man/collection', component: ManCollectionComponent},

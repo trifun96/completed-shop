@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/core/services/api-service';
 import { CartService } from 'src/app/core/services/cart-service';
 import { Products } from 'src/app/shared/models/products.model';
+import { NgxSpinnerService } from "ngx-spinner";
 
 @Component({
   selector: 'app-product-page',
@@ -14,7 +15,7 @@ export class ProductPageComponent implements OnInit {
   selectProduct: Products = null;
   search: string;
   filterProduct: Products[] = [];
-  constructor(private api: ApiService, private cart: CartService) {}
+  constructor(private api: ApiService, private cart: CartService, private spinner: NgxSpinnerService) {}
 
   ngOnInit(): void {
     this.getAllProducts();

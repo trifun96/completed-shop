@@ -188,3 +188,42 @@
     border-image: linear-gradient(to right, primary, secondary);
 
 }
+
+
+@media screen and (max-width: 500px){
+    .product-container {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 40px;
+
+
+}
+.search-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-left:100px;
+    width: 100%;
+}
+
+
+.title h1{
+    font-size: 40px;
+    font-weight: 350;
+    margin-left: 60px;
+}
+
+
+.products {
+
+    margin-right:40px;
+ }
+
+}
